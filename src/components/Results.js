@@ -1,4 +1,4 @@
-// src/components/Results.js
+
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import '../styles/Results.css';
@@ -8,13 +8,6 @@ const Results = () => {
   const navigate = useNavigate();
   const { score, totalQuestions, questions, userAnswers } = location.state || {};
 
-//   // In Results.js, add:
-// useEffect(() => {
-//   const highScore = localStorage.getItem('quizHighScore');
-//   if (!highScore || score > highScore) {
-//     localStorage.setItem('quizHighScore', score);
-//   }
-// }, [score]);
 
 // Display high score in results
 <p>High Score: {localStorage.getItem('quizHighScore') || score}</p>

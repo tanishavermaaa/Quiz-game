@@ -1,4 +1,4 @@
-// src/components/ProgressBar.js
+
 import React from 'react';
 
 const ProgressBar = ({ current, total }) => {

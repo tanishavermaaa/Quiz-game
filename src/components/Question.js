@@ -1,4 +1,4 @@
-// src/components/Question.js
+
 import React from 'react';
 
 const Question = ({ question, selectedAnswer, onAnswerSelect }) => {
