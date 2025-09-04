@@ -1,70 +1,146 @@
-# Getting Started with Create React App
+# Quiz Game 🎯
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beautiful, responsive React-based quiz application that tests your knowledge with questions from various categories. Built with modern web technologies and featuring a sleek user interface.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- 🎯 Multiple-choice questions from diverse categories
+- ⏱️ Timer for each question (30 seconds)
+- 📊 Real-time score tracking
+- 📱 Fully responsive design (mobile & desktop)
+- 🎨 Modern, clean UI with smooth animations
+- 🔄 Ability to navigate between questions
+- 📝 Results summary with correct/incorrect answers
+- 🔁 Restart quiz functionality
+- ♿ Accessibility support
+- 🌐 Online/Offline support (falls back to local questions)
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Play Now]: https://quezz-game.netlify.app/ 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## 🛠️ Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend Framework:** React 18
+- **Routing:** React Router DOM
+- **Styling:** CSS3 with Flexbox/Grid
+- **API:** Open Trivia DB API
+- **Deployment:** Netlify
+- **Build Tool:** Create React App
 
-### `npm run build`
+## 📦 Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/tanishavermaaa/Quiz-game.git
+   cd Quiz-game
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🏗️ Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+quiz-game/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── _redirects
+├── src/
+│   ├── components/
+│   │   ├── Quiz.js          # Main quiz component
+│   │   ├── Question.js      # Question display
+│   │   ├── Results.js       # Results page
+│   │   ├── ProgressBar.js   # Progress indicator
+│   │   └── Timer.js         # Question timer
+│   ├── data/
+│   │   └── questions.json   # Local questions fallback
+│   ├── styles/
+│   │   ├── Quiz.css         # Quiz styles
+│   │   ├── Results.css      # Results styles
+│   │   └── App.css          # Main app styles
+│   ├── App.js               # Root component
+│   ├── index.js             # Entry point
+│   └── index.css            # Global styles
+├── package.json
+├── netlify.toml             # Netlify configuration
+└── README.md
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🎮 How to Play
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Start the Quiz:** Click on any answer to begin
+2. **Answer Questions:** Select one of four options
+3. **Navigate:** Use "Previous" and "Next" buttons
+4. **Timer:** Each question has a 30-second time limit
+5. **Results:** View your score and review answers at the end
+6. **Restart:** Play again with new questions
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📱 Responsive Design
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Mobile:** Optimized for smartphones (320px+)
+- **Tablet:** Adapted for tablets (768px+)
+- **Desktop:** Enhanced for large screens (1024px+)
 
-### Code Splitting
+## 🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Netlify Deployment
+1. Build the project: `npm run build`
+2. Drag and drop the `build` folder to [Netlify](https://netlify.com)
+3. Or connect GitHub repo for automatic deployments
 
-### Analyzing the Bundle Size
+### Build Commands
+```bash
+npm run build    # Create production build
+npm run test     # Run test suite
+npm run eject    # Eject from Create React App (not recommended)
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🔧 Configuration
 
-### Making a Progressive Web App
+### Environment Variables
+Create a `.env` file for custom configuration:
+```env
+REACT_APP_API_URL=https://opentdb.com/api.php
+REACT_APP_QUESTION_COUNT=10
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🤝 Contributing
 
-### Advanced Configuration
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🙏 Acknowledgments
 
-### `npm run build` fails to minify
+- [Open Trivia DB](https://opentdb.com/) for providing the questions API
+- [Create React App](https://create-react-app.dev/) for the development environment
+- [Netlify](https://netlify.com) for seamless deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+**Enjoy playing!** 🎮
+
+Built with ❤️ using React
+```
+
