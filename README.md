@@ -15,9 +15,11 @@ A beautiful, responsive React-based quiz application that tests your knowledge w
 - ♿ Accessibility support
 - 🌐 Online/Offline support (falls back to local questions)
 
+
 ## 🚀 Live Demo
 
 **Play Now:** [https://quezz-game.netlify.app/]
+
 
 
 ## 🛠️ Technologies Used
@@ -120,5 +122,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 **Enjoy playing!** 🎮
 
 Built with ❤️ using React
-```
 
