@@ -98,37 +98,15 @@ quiz-game/
 - **Tablet:** Adapted for tablets (768px+)
 - **Desktop:** Enhanced for large screens (1024px+)
 
-## 🚀 Deployment
-
-### Netlify Deployment
-1. Build the project: `npm run build`
-2. Drag and drop the `build` folder to [Netlify](https://netlify.com)
-3. Or connect GitHub repo for automatic deployments
-
-### Build Commands
-```bash
-npm run build    # Create production build
-npm run test     # Run test suite
-npm run eject    # Eject from Create React App (not recommended)
-```
-
-## 🔧 Configuration
-
-### Environment Variables
-Create a `.env` file for custom configuration:
-```env
-REACT_APP_API_URL=https://opentdb.com/api.php
-REACT_APP_QUESTION_COUNT=10
-```
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch 
+3. Commit your changes 
+4. Push to the branch 
 5. Open a Pull Request
 
 
