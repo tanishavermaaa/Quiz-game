@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tanishavermaaa/Quiz-game/static/css/main.59c076ec.css",
+    "main.js": "/tanishavermaaa/Quiz-game/static/js/main.809c44a9.js",
+    "index.html": "/tanishavermaaa/Quiz-game/index.html",
+    "main.59c076ec.css.map": "/tanishavermaaa/Quiz-game/static/css/main.59c076ec.css.map",
+    "main.809c44a9.js.map": "/tanishavermaaa/Quiz-game/static/js/main.809c44a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59c076ec.css",
+    "static/js/main.809c44a9.js"
+  ]
+}
