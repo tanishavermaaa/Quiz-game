@@ -17,7 +17,7 @@ A beautiful, responsive React-based quiz application that tests your knowledge w
 
 ## 🚀 Live Demo
 
-[Play Now]: https://quezz-game.netlify.app/ 
+**Play Now:** [https://quezz-game.netlify.app/]
 
 
 ## 🛠️ Technologies Used
