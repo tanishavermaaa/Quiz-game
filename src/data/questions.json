@@ -1,0 +1,74 @@
+{
+  "question": [
+    {
+      "id": 1,
+      "question": "What is the capital of France?",
+      "correctAnswer": "Paris",
+      "options": ["London", "Berlin", "Paris", "Madrid"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "question": "Which planet is known as the Red Planet?",
+      "correctAnswer": "Mars",
+      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 3,
+      "question": "What is the largest mammal in the world?",
+      "correctAnswer": "Blue Whale",
+      "options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 4,
+      "question": "Which element has the chemical symbol 'O'?",
+      "correctAnswer": "Oxygen",
+      "options": ["Gold", "Oxygen", "Osmium", "Oganesson"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 5,
+      "question": "Who painted the Mona Lisa?",
+      "correctAnswer": "Leonardo da Vinci",
+      "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 6,
+      "question": "What is the largest ocean on Earth?",
+      "correctAnswer": "Pacific Ocean",
+      "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 7,
+      "question": "Which is not a primary color of light?",
+      "correctAnswer": "Yellow",
+      "options": ["Red", "Green", "Blue", "Yellow"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 8,
+      "question": "What is the hardest natural substance on Earth?",
+      "correctAnswer": "Diamond",
+      "options": ["Diamond", "Tungsten", "Titanium", "Graphite"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 9,
+      "question": "Which planet has the most moons?",
+      "correctAnswer": "Saturn",
+      "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 10,
+      "question": "What is the main ingredient in guacamole?",
+      "correctAnswer": "Avocado",
+      "options": ["Banana", "Avocado", "Cucumber", "Peas"],
+      "difficulty": "easy"
+    }
+  ]
+}

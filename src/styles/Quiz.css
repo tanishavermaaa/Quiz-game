@@ -1,0 +1,234 @@
+/* Navigation Buttons Styling */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.navigation-buttons button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  min-width: 120px;
+}
+
+.navigation-buttons button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.navigation-buttons button:hover::before {
+  left: 100%;
+}
+
+.navigation-buttons button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Previous Button */
+.navigation-buttons button:first-child {
+  background: linear-gradient(to right, #6b7280, #4b5563);
+  color: white;
+}
+
+.navigation-buttons button:first-child:hover:not(:disabled) {
+  background: linear-gradient(to right, #4b5563, #374151);
+  box-shadow: 0 6px 12px rgba(75, 85, 99, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Next Button */
+.navigation-buttons button:last-child {
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  color: white;
+}
+
+.navigation-buttons button:last-child:hover:not(:disabled) {
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Disabled State */
+.navigation-buttons button:disabled {
+  background: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navigation-buttons button:disabled::before {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navigation-buttons {
+    flex-direction: column;
+  }
+  
+  .navigation-buttons button {
+    width: 100%;
+  }
+}
+
+/* Improved options container */
+.options-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Improved option styling */
+.option {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 0;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: white;
+  text-align: left;
+}
+
+.option:hover {
+  background-color: #f8f9fa;
+  border-color: #2196f3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(33, 150, 243, 0.1);
+}
+
+.option.selected {
+  background-color: #e3f2fd;
+  border-color: #2196f3;
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);
+}
+
+/* Custom radio button styling */
+.option-radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border: 2px solid #757575;
+  border-radius: 50%;
+  margin-right: 15px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.option.selected .option-radio {
+  border-color: #2196f3;
+  background-color: #2196f3;
+}
+
+.option.selected .option-radio::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* Option content */
+.option-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.option-letter {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  margin-right: 12px;
+  font-weight: bold;
+  color: #616161;
+  font-size: 14px;
+}
+
+.option.selected .option-letter {
+  background-color: #2196f3;
+  color: white;
+}
+
+.option-text {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .option {
+    padding: 12px;
+  }
+  
+  .option-radio {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    margin-right: 12px;
+  }
+  
+  .option.selected .option-radio::after {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .option-letter {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  
+  .option-text {
+    font-size: 14px;
+  }
+}
+
+/* Animation for selection */
+@keyframes selectOption {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.option.selected {
+  animation: selectOption 0.3s ease;
+}
